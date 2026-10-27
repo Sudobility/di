@@ -1,6 +1,6 @@
 {
   "name": "@sudobility/di",
-  "version": "1.5.80",
+  "version": "1.5.81",
   "description": "Platform-agnostic dependency injection interfaces for React and React Native projects with platform-specific implementations",
   "type": "module",
   "main": "dist/web/index.js",
@@ -132,6 +132,7 @@
   ],
   "author": "johnqh",
   "devDependencies": {
+    "@eslint/js": "~10.0.1",
     "@react-native-firebase/analytics": "~26.4.1",
     "@react-native-firebase/app": "~26.4.1",
     "@react-native-firebase/messaging": "~26.4.1",

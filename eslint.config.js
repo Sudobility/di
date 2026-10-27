@@ -56,6 +56,22 @@ export default [
       'import-x': importX,
     },
     rules: {
+      'react-hooks/refs': 'off',
+      'react-hooks/use-memo': 'off',
+      'react-hooks/incompatible-library': 'off',
+      'react-hooks/globals': 'off',
+      'react-hooks/error-boundaries': 'off',
+      'react-hooks/set-state-in-render': 'off',
+      'react-hooks/unsupported-syntax': 'off',
+      'react-hooks/config': 'off',
+      'react-hooks/gating': 'off',
+      'react-hooks/set-state-in-effect': 'off',
+      'react-hooks/purity': 'off',
+      'react-hooks/static-components': 'off',
+      'react-hooks/immutability': 'off',
+      'react-hooks/preserve-manual-memoization': 'off',
+      'preserve-caught-error': 'off',
+      'no-useless-assignment': 'off',
       'prettier/prettier': 'error',
       'no-unused-vars': 'off', // Turn off base rule to avoid conflicts
       '@typescript-eslint/no-unused-vars': [

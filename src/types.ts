@@ -151,8 +151,6 @@ export interface AppConfig {
   /** Backend URL for blockchain/crypto indexer service */
   indexerBackendUrl: string;
 
-  /** RevenueCat API key for subscription management */
-  revenueCatApiKey: string;
   /** WalletConnect project ID for crypto wallet integration */
   walletConnectProjectId: string;
   /** Privy application ID for authentication service */

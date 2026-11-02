@@ -101,7 +101,6 @@ export function createMockAppConfig(
   return {
     wildDuckBackendUrl: 'http://localhost:3000',
     indexerBackendUrl: 'http://localhost:3001',
-    revenueCatApiKey: 'mock-revenuecat-key',
     walletConnectProjectId: 'mock-walletconnect-id',
     privyAppId: 'mock-privy-id',
     firebase: createMockFirebaseConfig(overrides.firebase),

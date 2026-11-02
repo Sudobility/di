@@ -57,8 +57,6 @@ export function createRNAppConfig(envProvider: RNEnvProvider): AppConfig {
     walletConnectProjectId:
       (envProvider.get('VITE_WALLETCONNECT_PROJECT_ID') as
         string | undefined) ?? '',
-    revenueCatApiKey:
-      (envProvider.get('VITE_REVENUECAT_API_KEY') as string | undefined) ?? '',
     privyAppId:
       (envProvider.get('VITE_PRIVY_APP_ID') as string | undefined) ?? '',
     firebase: createFirebaseConfig(envProvider),

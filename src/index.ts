@@ -34,6 +34,9 @@ export * from './info/index.js';
 // Alert interfaces
 export * from './alert/index.js';
 
+// Current-user provider (platform-agnostic: Firebase, wallet, …)
+export * from './user/index.js';
+
 // Theme interfaces
 export * from './theme/platform-theme.js';
 

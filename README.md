@@ -254,6 +254,24 @@ These exports work identically on both platforms:
 - `getThemeService()`, `getNavigationService()`, `getNotificationService()`
 - `RNThemeService`, `RNNavigationService`, `RNNotificationService`
 
+## Additional Modules
+
+Beyond storage/network/firebase, the library ships more interfaces and
+singletons, each also available as a subpath import:
+
+| Module | Subpath | Highlights |
+|--------|---------|------------|
+| Info | `@sudobility/di/info` | `InfoInterface`, `initializeInfoService`/`getInfoService` — toast/alert display |
+| Alert | `@sudobility/di/alert` | `AlertInterface`, `initializeAlertService`/`getAlertService` — confirm-style dialogs |
+| User | (main entry) | `UserProvider` + singleton — platform-agnostic "who is the current user" (Firebase, wallet, …) |
+| Logging | `@sudobility/di/logging` | `Logger`, `LoggerProvider`, `LogType` enum |
+| Hooks | `@sudobility/di/hooks` | `useApiCall`, `useApiCallStrict`, `useApiGroup` |
+| Utils | `@sudobility/di/utils` | `safeAsync`, `withTimeout`, `withCache`, `debounceAsync`, … |
+| Env | `@sudobility/di/env` | `EnvProvider`, `EnvFactory`, `EnvUtils` |
+
+All interface, mock, and utility exports are also reachable from the root
+`@sudobility/di` import.
+
 ## Testing with Mocks
 
 ```typescript
@@ -314,6 +332,41 @@ covers the Firebase **JS** SDK only. `@react-native-firebase` native modules
 do not route through JS `fetch` and will still reach Google directly. RN apps
 using the native SDKs are not fully covered by this mechanism.
 
+## Development
+
+This package is a TypeScript library built with [Bun](https://bun.sh) and tested
+with [Vitest](https://vitest.dev). It is ESM-only and emits no CommonJS output.
+
+```bash
+# Install dependencies
+bun install
+
+# Build to dist/ (tsc, then rewrites ESM import extensions)
+bun run build
+bun run build:watch        # incremental rebuild
+
+# Type-check without emitting
+bun run typecheck
+
+# Tests (Vitest)
+bun run test:unit          # run all tests once
+bun run test:watch         # watch mode
+bun run test:coverage      # with coverage (95% threshold enforced)
+bunx vitest run tests/analytics   # run a single directory/file
+
+# Lint & format
+bun run lint
+bun run lint:fix
+bun run format
+
+# Remove build artifacts
+bun run clean
+```
+
+> There is no bare `test` script — use `bun run test:unit`.
+> Installing requires access to the `@sudobility` scope on GitHub Packages
+> (see `.npmrc`); set a `GH_PACKAGES_READ_TOKEN`-backed auth token first.
+
 ## License
 
-MIT
+BUSL-1.1

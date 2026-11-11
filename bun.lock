@@ -9,7 +9,7 @@
         "@react-native-firebase/analytics": "~26.4.1",
         "@react-native-firebase/app": "~26.4.1",
         "@react-native-firebase/messaging": "~26.4.1",
-        "@sudobility/types": "^1.9.79",
+        "@sudobility/types": "^1.10.1",
         "@types/node": "~26.6.5",
         "@types/react": "~19.3.0",
         "@typescript-eslint/eslint-plugin": "~8.72.0",
@@ -31,7 +31,7 @@
         "@react-native-firebase/analytics": ">=18.0.0",
         "@react-native-firebase/app": ">=18.0.0",
         "@react-native-firebase/messaging": ">=18.0.0",
-        "@sudobility/types": "^1.9.79",
+        "@sudobility/types": "^1.10.1",
         "firebase": ">=11.0.0",
         "react": ">=18.0.0",
         "react-native": ">=0.70.0",
@@ -391,7 +391,7 @@
 
     "@standard-schema/spec": ["@standard-schema/spec@1.1.0", "", {}, "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w=="],
 
-    "@sudobility/types": ["@sudobility/types@1.9.79", "https://npm.pkg.github.com/download/@sudobility/types/1.9.79/59975e39d6ab7e215418a489ef3cfe214b7521f4", {}, "sha512-rRtDT++fVy+I1m6E31fq752lxCQytFzwfqpJe5wDMPLcC1rJOBa7v+4+5e3cmX8VV1CsuLg8PTLMFe6A7AELRQ=="],
+    "@sudobility/types": ["@sudobility/types@1.10.1", "https://npm.pkg.github.com/download/@sudobility/types/1.10.1/8e353f55822e0bc3fa9555dfe3aee593e140c012", {}, "sha512-LmJyjDDY5rHDET1wstkT0i59SSOrOXijL2iqrgfcK6VHtKcBEw7FFpbw4CyHn+dhR9kqkYpEydSfypoqw7crMg=="],
 
     "@tybys/wasm-util": ["@tybys/wasm-util@0.10.4", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A=="],
 

@@ -2,8 +2,7 @@ import type {
   AnalyticsClient,
   AnalyticsEventData,
 } from '../../analytics/analytics.js';
-import { AnalyticsEvent } from '@sudobility/types';
-import type { Optional } from '@sudobility/types';
+import { AnalyticsEvent, type Optional } from '@sudobility/types';
 
 // Lazy load Firebase analytics to avoid crashes if native module is not linked
 type FirebaseAnalyticsModule =
